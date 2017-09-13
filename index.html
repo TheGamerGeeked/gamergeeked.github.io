@@ -17,14 +17,15 @@
 
 <h1>Sites</h1>
 <select onChange="window.location.href=this.value">
-	<option>Directories
+	<option value="">Directories</value>
 	<option value="othersites.html">/othersites/</option>
 	<option value="conlang">/conlang/</option>
 	<option value="learn">/learn/</option>
 </select>
-<ul>
-	<li><a href="http://blog.gamergeeked.us">blog (TheGamerGeeked)</a></li>
-	<li><a href="http://lingoland.gamergeeked.us">lingoland (Linguistics Forum)</a></li>
-</ul>
+<select onChange="window.location.href=this.value">
+	<option value="">Sites</value>
+	<option value="blog.gamergeeked.us">blog.</option>
+	<option value="lingoland.gamergeeked.us">lingoland</option>
+</select>
 </body>
 </html>
