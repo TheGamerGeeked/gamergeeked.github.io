@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+	    <h1>Click on an operation to calculate.</h1><h2>Or, click on C to start a new calculation</h2>
+		<p><button type="button" onclick="summon('+')">+</button><button type="button" onclick="summon('-')">-</button></p>
+		<p><button type="button" onclick="summon('*')">*</button><button type="button" onclick="summon('/')">/</button></p>
+		<p><button type="button" onclick="summon('%')">%<button type="button" onclick="reset()">C</button></p>
+	</body>
+</html>
+<script type="text/javascript">var n1
+function reset() {
+    n1 = prompt("First Number", "2");
+} 
+reset();
+var r
+function summon(op) {
+    var n2 = prompt("Second Number", "2");
+    if (op == "+") {
+        r = Number(n1)+Number(n2);
+        window.alert(n1 + " + " + n2 + " = " + r)
+    } else if (op == "-") {
+        r = Number(n1)-Number(n2);
+        window.alert(n1 + " - " + n2 + " = " + r)
+    } else if (op == "*") {
+        r = Number(n1)*Number(n2);
+        window.alert(n1 + " * " + n2 + " = " + r)
+    } else if (op == "/") {
+        r = Number(n1)/Number(n2);
+        window.alert(n1 + " / " + n2 + " = " + r)
+    } else if (op == "%") {
+        r = Number(n1)%Number(n2);
+        window.alert(n1 + " % " + n2 + " = " + r)
+    } n1 = r;
+}</script>
