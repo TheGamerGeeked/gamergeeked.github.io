@@ -30,7 +30,7 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"678034ab9ecf0d1c180bba38e5372eb4973
         if ($("#trevorio").val() === "") {
           alert("Please enter something first!");
         } else {
-          $.post("#key", {content: $("#trevorio").val()}, function(data, status) {
+          $.post($("#key"), {content: $("#trevorio").val()}, function(data, status) {
             $("trevorio").val("");
           });
         }
