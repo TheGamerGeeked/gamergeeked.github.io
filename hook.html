@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:0,petok:"678034ab9ecf0d1c180bba38e5372eb49739cbe1-1516239326-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/b7ef205d/cloudflare-static/rocket.min.js"></script>
+<script data-rocketsrc="https://code.jquery.com/jquery-3.1.1.min.js" type="text/rocketscript"></script>
+    <title>People</title>
+    <style>
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      input {
+        width: 700px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+    <input id="trevorio"></input>
+    <button id="trevorioClick">Send</button><br><br>
+  </body>
+
+    <script type="text/rocketscript">
+      $("#trevorioClick").click(function() {
+        if ($("#trevorio").val() === "") {
+          alert("Please enter something first!");
+        } else {
+          $.post("https://discordapp.com/api/webhooks/403073297962500109/FXnOAQV-_lLWcw1K_8cEUt38qYqSbH1ZjSEUmT7rXED0HePX24d5cijnw-A4eiTwPdOH", {content: $("#trevorio").val()}, function(data, status) {
+            $("trevorio").val("");
+          });
+        }
+      })
+    </script>
+  </body>
+</html>
