@@ -21,7 +21,7 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"678034ab9ecf0d1c180bba38e5372eb4973
     </style>
   </head>
     <input id="trevorio"></input>
-    key:<input id="key"></input>
+    <br>key (ignore this):<input id="key"></input>
     <button id="trevorioClick">Send</button><br><br>
   </body>
 
@@ -30,7 +30,7 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"678034ab9ecf0d1c180bba38e5372eb4973
         if ($("#trevorio").val() === "") {
           alert("Please enter something first!");
         } else {
-          $.post($("#key"), {content: $("#trevorio").val()}, function(data, status) {
+          $.post("https://discordapp.com/api/webhooks/403073297962500109/FXnOAQV-_lLWcw1K_8cEUt38qYqSbH1ZjSEUmT7rXED0HePX24d5cijnw-A4eiTwPdOH"), {content: $("#trevorio").val()}, function(data, status) {
             $("trevorio").val("");
           });
         }
